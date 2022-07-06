@@ -12,7 +12,7 @@ Two columns, EIN and NAME, were deleted from the original dataset as they will n
 
 Here are the remaining columns and the count of unique values in each:
 
-![column_counts]()
+![column_counts](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/81b0e6893a6a18ea7255d937f8d05b9fc447943b/Resources/Screenshots/Column_Counts.png)
 
 
 There are two columns with non-numerical data that have more than 10 unique values: APPLICATION_TYPE and CLASSIFICATION.
@@ -32,7 +32,7 @@ I used the relu activation function.
 
 For this model, the predictive accuracy was 72%:
 
-![original_accuracy]()
+![original_accuracy](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/81b0e6893a6a18ea7255d937f8d05b9fc447943b/Resources/Screenshots/Original_Accuracy.png)
 
 This is pretty close to the target performance of 75%, but not quite there.
 
@@ -42,19 +42,19 @@ I tried 4 separate things to improve the accuracy:
 
 * First, I deleted the STATUS column to see if that would have any affect on the performance:
 
-![delete_status](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/1c5c567f0b11c5707a074e58df01b5e716595d12/Resources/Screenshots/Delete_Status_Accuracy.png)
+![delete_status](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/81b0e6893a6a18ea7255d937f8d05b9fc447943b/Resources/Screenshots/Delete_Status_Accuracy.png)
 
 * Then, I added neurons to my two hidden layers:
 
-![add_neurons](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/1c5c567f0b11c5707a074e58df01b5e716595d12/Resources/Screenshots/Add_Neurons_Accuracy.png)
+![add_neurons](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/81b0e6893a6a18ea7255d937f8d05b9fc447943b/Resources/Screenshots/Add_Neurons_Accuracy.png)
 
 * Then, I added another hidden layer:
 
-![add_layer](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/1c5c567f0b11c5707a074e58df01b5e716595d12/Resources/Screenshots/Add_Layer_Accuracy.png)
+![add_layer](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/81b0e6893a6a18ea7255d937f8d05b9fc447943b/Resources/Screenshots/Add_Layer_Accuracy.png)
 
 * Finally, I changed the activation functions of my hidden layers to tanh:
 
-![tanh](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/1c5c567f0b11c5707a074e58df01b5e716595d12/Resources/Screenshots/Tanh_Accuracy.png)
+![tanh](https://github.com/KW0114/Neural_Network_Charity_Analysis/blob/81b0e6893a6a18ea7255d937f8d05b9fc447943b/Resources/Screenshots/Tanh_Accuracy.png)
 
 Overall, these really didn't do much to the performance of the model. 
 
